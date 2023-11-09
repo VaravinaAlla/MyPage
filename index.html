@@ -40,7 +40,7 @@
   <body>
     <!--Navigation-->
     <div class="navigation-section sticky-top">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
         <a class="navbar-brand" href="index.html"
           >Alla Varavina <br /><span class="front-end-title">QA Engineer</span>
         </a>
@@ -60,7 +60,7 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item-active">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
@@ -81,35 +81,50 @@
     <!--Header-->
     <div class="header">
       <div class="container">
-        <h4 class="reveal">👋 Hi My name is</h4>
-        <h1 class="reveal">Alla Varavina</h1>
-        <h3 class="reveal">ua QA Engineer, based in Europe</h3>
-        <h2 class="reveal">
-          QA Engineer with experience in Manual and Automation Testing
-        </h2>
-        <p class="header-subtitle reveal">
-          I am a design-minded front-end software engineer focused on building
-          beautiful interfaces & experiences.
-        </p>
-        <div class="container text-start mt-5 button-section d-flex reveal">
-          <a href="resume.html" class="main-button me-3" title="Resume"
-            >Resume</a
-          >
-          <a
-            href="mailto:znat.nado@gmail.com"
-            class="secondary-button"
-            title="Contact me"
-            >Contact me</a
-          >
+        <div class="row">
+          <div class="col-3">
+            <div class="my-profile-photo">
+              <img
+                src="images/Alla_V.jpg"
+                class="img-thumbnail rounded-circle shadow w-100"
+                alt="Alla-Varavina"
+              />
+            </div>
+          </div>
+          <div class="col-8">
+            <h4 class="reveal text-center">Hi! My name is</h4>
+            <h1 class="reveal text-center">Alla Varavina</h1>
+            <h3 class="reveal text-center">ua QA Engineer, based in Europe</h3>
+            <h2 class="reveal text-center">
+              QA Engineer with experience in Manual and Automation Testing
+            </h2>
+            <p class="header-subtitle reveal text-center">
+              I am a design-minded front-end software engineer focused on
+              building beautiful interfaces & experiences.
+            </p>
+            <div
+              class="container text-center mt-5 button-section d-flex justify-content-center align-items-center reveal"
+            >
+              <a href="resume.html" class="main-button me-3" title="Resume"
+                >Resume</a
+              >
+              <a
+                href="mailto:znat.nado@gmail.com"
+                class="secondary-button"
+                title="Contact me"
+                >Contact me</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!--About Me-->
     <div class="section" id="about">
-      <div class="container pt-5 pb-5">
+      <div class="container d-flex">
         <div class="row pt-5 pb-5 d-flex">
-          <div class="col-lg about-me mb-5">
-            <h3 class="text-start pb-3" id="about-me">About me</h3>
+          <div class="col-lg about-me mb-3">
+            <h1 class="text-center pb-3" id="about-me">About me</h1>
             <div class="wrap-about-me">
               <p class="text-start about-text">
                 Hello! My name is Alla, and I enjoy problem-solving and bringing
@@ -133,28 +148,23 @@
                 range of clients.
               </p>
               <h4>Skills</h4>
-              <h3 class="skills pb-3">
-                <i class="fa-brands fa-java"></i
+              <h3 class="skills pb-4 text-center">
+                <i class="fa-brands fa-java pe-3"></i
                 ><i class="fa-brands fa-css3-alt pe-3"></i
                 ><i class="fa-brands fa-js pe-3"></i
                 ><i class="fa-brands fa-bootstrap pe-3"></i
-                ><i class="fa-brands fa-html5"></i
-                ><i class="fa-brands fa-docker"></i
-                ><i class="fa-brands fa-github"></i
-                ><i class="fa-brands fa-jira"></i>
+                ><i class="fa-brands fa-html5 pe-3"></i
+                ><i class="fa-brands fa-docker pe-3"></i
+                ><i class="fa-brands fa-github pe-3"></i
+                ><i class="fa-brands fa-jira pe-3"></i>
               </h3>
-
-              <a href="resume/html" class="read-more-link" title="Read more"
-                >Read more <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+              <div class="container text-center">
+                <a href="resume.html" class="read-more-link" title="Read more"
+                  >Read more
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
-          </div>
-          <div class="col-lg my-profile-photo">
-            <img
-              src="images/Alla_V.jpg"
-              class="rounded-5 shadow w-100"
-              alt="Alla-Varavina"
-            />
           </div>
         </div>
       </div>
@@ -162,7 +172,7 @@
     <!--My Work-->
     <div class="section-work" id="projects">
       <div class="container pt-5 pb-5">
-        <h3 class="text-start pt-5">My Projects</h3>
+        <h1 class="text-start pt-3 text-center">My Projects</h1>
       </div>
       <div class="container">
         <div class="row">

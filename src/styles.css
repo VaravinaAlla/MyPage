@@ -82,30 +82,31 @@ body {
 }
 
 .header {
-  height: 700px;
-  padding-top: 50px;
+  height: 400px;
+  padding-top: 10px;
 }
 
 h4 {
-  font-size: 22px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 22px;
   font-weight: bold;
   color: var(--accent-color);
   line-height: 1;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -117,7 +118,6 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-top: 30px;
-  max-width: 600px;
 }
 
 .button-section {
@@ -163,7 +163,8 @@ p {
 
 .my-profile-photo {
   display: flex;
-  justify-content: center;
+  max-width: 100%;
+  margin-right: 20px;
 }
 
 .shecodes {
@@ -209,7 +210,7 @@ p {
   padding-bottom: 20px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 600px) {
   .navbar {
     padding-left: 10px;
     padding-right: 0;
@@ -226,16 +227,16 @@ p {
 
   h1,
   h2 {
-    font-size: 50px;
+    font-size: 18px;
   }
 
   .header-subtitle {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .main-button,
   .secondary-button {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .skills {
@@ -247,7 +248,6 @@ p {
 
 h2,
 .header-subtitle,
-.wrap-about-me,
 .my-profile-photo,
 .featured-project {
   animation: fade linear both;
