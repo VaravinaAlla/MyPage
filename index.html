@@ -22,8 +22,53 @@
       crossorigin="anonymous"
     ></script>
     <!--Visme-->
-    <script src="https://qastatic-bundles.visme.co/development/visme-embed.js"></script><div class="visme_d" data-title="Something new" data-url="g74xx0q6-something-new" data-w="1920" data-full-h="false" data-h="1080" data-domain="qa"></div>
-    <iframe title="Ontario Class Actions 2020 Mid-Year Review" src="//my.visme.co/embed/g789vkyo-ontario-class-actions-2020-mid-year-update" scrolling="no" height="4200" width="800" style="border: 0px;"></iframe>
+    <!-- Hidden Visme form -->
+
+    <div id="vismeForm" style="display: none;">
+
+      <div class="visme_d" data-title="Sign Up for a Trial Lesson" data-url="x40qmvxy-signup-for-trial-lesson" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="89463"></div>
+
+    </div>
+
+    <!-- JavaScript to show/hide form on button click -->
+
+    <script>
+
+    var formInitialized = false;
+
+    document.getElementById('preRegistrationButton4').addEventListener('click', function() {
+
+        var vismeForm = document.getElementById('vismeForm');
+
+        // Initialize the Visme form only once
+
+        if (!formInitialized && typeof window.VismeEmbed !== 'undefined') {
+
+            window.VismeEmbed.load();
+
+            formInitialized = true;
+
+        } else if (!formInitialized) {
+
+            console.error('VismeEmbed not found for initialization.');
+
+        }
+
+        // Toggle form visibility
+
+        if (vismeForm.style.display === "none") {
+
+            vismeForm.style.display = "block";
+
+        } else {
+
+            vismeForm.style.display = "none";
+
+        }
+
+    });
+
+</script>
     <!--Title-->
     <title>QA Engineer - Alla Varavina</title>
     <!--Bootstrap CSS-->
